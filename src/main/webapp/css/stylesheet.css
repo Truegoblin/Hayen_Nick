@@ -2,17 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: Lato, sans-serif;
 }
 header {
     align-items: center;
-    background-color: #cb4242;
-}
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top:0.5em;
-    text-align: center;
+    background-color: #000;
 }
 nav ul {
     display: flex;
@@ -25,19 +19,45 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     padding: 10px 20px;
-    border-radius: 15px;
 }
 nav ul li a:hover {
-    background-color: #74c1ea;
+    color: #daa520;
 }
 body {
-    background-color: #74c1ea;
+    background-color: #daa520;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+.intro {
+    margin: 10em;
+    padding: 2em;
+    border-radius: 15px;
+    border: solid;
+}
+.intro h1 {
+    text-align: center;
+    margin-top: 0;
+}
+.intro p {
+    font-size: 130%;
+}
+.cinema {
+    width: 400px;
+    position: relative;
+    left: 35%;
+    top: 5em;
 }
 .form {
     max-width: 80%;
-    margin: 0 auto;
+}
+.form h2 {
+    text-align: center;
+    padding: 1.5em 0 0;
 }
 .form p{
     margin: 2.5em;
@@ -69,4 +89,58 @@ input, textarea {
     border-radius: 0.4rem;
     -webkit-border-radius: 0.4rem;
     -moz-border-radius: 0.4rem;
+}
+footer {
+    background-color: #000;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    color: #fff;
+}
+table, th, td {
+    border: 2px solid;
+}
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+    width: 75%;
+    font-size: 130%;
+}
+th, td {
+    height: 35px;
+    text-align: center;
+}
+.langste {
+    text-align: center;
+    font-size: 130%;
+}
+.hoofding {
+    position: relative;
+    left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+    .form p {
+        display: block;
+    }
+    .form label {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    th,td {
+        font-size: 65%;
+    }
 }

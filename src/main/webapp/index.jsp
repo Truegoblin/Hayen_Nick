@@ -16,7 +16,6 @@
             <li><a href="Voeg%20Toe.jsp">Voeg Toe</a></li>
             <li ><a href="Controller">Overzicht</a></li>
         </ul>
-
     </nav>
 </header>
 <main>
